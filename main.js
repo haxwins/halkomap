@@ -24,8 +24,11 @@ window.addEventListener('deviceorientation', e => {
     document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
     document.getElementById('box').style.boxShadow = `${tiltLR/4}px ${tiltFB/4}px`;
 
-    document.getElementById('inner').style.top = `calc(50% - 25px + ${tiltLR}px)`;
-    document.getElementById('inner').style.left = `calc(50% - 25px + ${tiltFB}px)`;
+    document.getElementById('inner').style.top = `calc(50% - 25px + ${tiltFB}px)`;
+    document.getElementById('inner').style.left = `calc(50% - 25px + ${tiltLR}px)`;
+
+    document.getElementById('inner').style.borderBottom = `solid ${tiltFB}px`;
+    document.getElementById('inner').style.borderRight = `solid ${tiltLR}px`;
  });
 
 window.addEventListener('devicemotion', e => {
