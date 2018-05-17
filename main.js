@@ -12,7 +12,8 @@ window.onload = () =>{
     box.style.border = `1px solid black`;
     box.style.padding = `20px`;
     box.style.boxShadow = '5px 10px';
-    box.style.width = `30px`;
+    box.style.width = `40px`;
+    box.style.marginLeft = `50px`;
 }
 window.addEventListener('deviceorientation', e => {
     document.getElementById('text1').innerHTML = e.gamma;
@@ -21,7 +22,7 @@ window.addEventListener('deviceorientation', e => {
     let tiltFB = e.beta;
 
     document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
-    document.getElementById('box').style.boxShadow = `${tiltLR/2}px ${tiltFB/2}px`;
+    document.getElementById('box').style.boxShadow = `${tiltLR/4}px ${tiltFB/4}px`;
  });
 
 window.addEventListener('devicemotion', e => {
