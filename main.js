@@ -10,9 +10,14 @@ window.onload = () =>{
      }
      
     
-     window.addEventListener('deviceorientation', function(event) {
-        document.getElementById('text3').innerHTML = "we in";
-        
-     });
+     
     
 }
+window.addEventListener('deviceorientation', function(event) {
+    document.getElementById('text3').innerHTML = "we in";
+    
+ });
+
+ window.addEventListener('devicemotion', function(event) {
+    document.getElementById('text3').innerHTML = "we in2";
+ });
