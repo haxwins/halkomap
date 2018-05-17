@@ -3,18 +3,18 @@ window.onload = () =>{
     let element = document.getElementById('logo')
     element.style.width = "200px";
     if (window.DeviceOrientationEvent) {
-        document.getElementById('text3').innerHTML = 'can';
+        document.getElementById('text3').innerHTML = 'can124124';
         
      } else {
-        document.getElementById('text3').innerHTML = 'cant';
+        document.getElementById('text3').innerHTML = 'cant214124';
      }
 }
 
-window.addEventListener('deviceorientation', function(event) {
-    document.getElementById('text1').innerHTML = "asd";
+window.addEventListener('deviceorientation', e => {
+    document.getElementById('text1').innerHTML = e.gamma;
     
  });
 
-window.addEventListener('devicemotion', function(event) {
+window.addEventListener('devicemotion', e => {
     document.getElementById('text2').innerHTML = "asd2";
  });
