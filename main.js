@@ -33,6 +33,8 @@ window.addEventListener('deviceorientation', e => {
 
 window.addEventListener('devicemotion', e => {
     if(event.acceleration.x>5){
-        document.getElementById('text3').innerHTML = 'xd';
+        let arr = ['red', 'blue', 'lightgreen'];
+        let num = Math.floor((Math.random() * 3)-1);
+        document.getElementById('inner').style.backgroundColor = arr[num];
     }
  });
