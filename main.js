@@ -14,15 +14,12 @@ window.onload = () =>{
     box.style.boxShadow = '5px 10px';
     box.style.width = `30px`;
 }
-let box = document.getElementById('box');
-box.style.border = `1px solid black`;
-box.style.padding = `10px`;
-box.style.boxShadow = '5px 10px;'
 window.addEventListener('deviceorientation', e => {
-    document.getElementById('text1').innerHTML = e.gamma;
-    document.getElementById('text2').innerHTML = e.beta;
+    document.getElementById('text1').innerHTML = e.gamma*5;
+    document.getElementById('text2').innerHTML = e.beta*10;
     let tiltLR = e.gamma;
     let tiltFB = e.beta;
+
     document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
     document.getElementById('box').style.boxShadow = `${tiltLR*5}px ${tiltFB*10}px`;
  });
