@@ -12,6 +12,10 @@ window.onload = () =>{
 
 window.addEventListener('deviceorientation', e => {
     document.getElementById('text1').innerHTML = e.gamma;
+    let tiltLR = e.gamma;
+    let tiltFB = e.beta;
+
+    document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
     
  });
 
