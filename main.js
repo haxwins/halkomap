@@ -27,8 +27,8 @@ window.addEventListener('deviceorientation', e => {
     document.getElementById('inner').style.top = `calc(50% - 25px + ${tiltFB}px)`;
     document.getElementById('inner').style.left = `calc(50% - 25px + ${tiltLR}px)`;
 
-    document.getElementById('inner').style.borderBottom = `solid ${tiltFB}px`;
-    document.getElementById('inner').style.borderRight = `solid ${tiltLR}px`;
+    document.getElementById('container2').style.borderBottom = `solid ${tiltFB}px`;
+    document.getElementById('container2').style.borderRight = `solid ${tiltLR}px`;
  });
 
 window.addEventListener('devicemotion', e => {
