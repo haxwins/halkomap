@@ -32,5 +32,8 @@ window.addEventListener('deviceorientation', e => {
  });
 
 window.addEventListener('devicemotion', e => {
-    
+    document.getElementById('text3').innerHTML = event.acceleration.x;
+    if(event.acceleration.x>2){
+        
+    }
  });
