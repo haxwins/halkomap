@@ -21,7 +21,7 @@ window.addEventListener('deviceorientation', e => {
     let tiltFB = e.beta;
 
     document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
-    document.getElementById('box').style.boxShadow = `${tiltLR}px ${tiltFB}px`;
+    document.getElementById('box').style.boxShadow = `${tiltLR/2}px ${tiltFB/2}px`;
  });
 
 window.addEventListener('devicemotion', e => {
