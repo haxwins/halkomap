@@ -3,10 +3,10 @@ window.onload = () =>{
     let element = document.getElementById('logo')
     element.style.width = "200px";
     if (window.DeviceOrientationEvent) {
-        document.getElementById('text1').innerHTML = 'can';
+        document.getElementById('text3').innerHTML = 'can';
         
      } else {
-        document.getElementById('text2').innerHTML = 'cant';
+        document.getElementById('text3').innerHTML = 'cant';
      }
      
     
@@ -14,10 +14,10 @@ window.onload = () =>{
     
 }
 window.addEventListener('deviceorientation', function(event) {
-    document.getElementById('text3').innerHTML = "we in";
+    document.getElementById('text1').innerHTML = "we in";
     
  });
 
  window.addEventListener('devicemotion', function(event) {
-    document.getElementById('text3').innerHTML = "we in2";
+    document.getElementById('text2').innerHTML = "we in2";
  });
