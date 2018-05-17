@@ -23,6 +23,9 @@ window.addEventListener('deviceorientation', e => {
 
     document.getElementById('logo').style.transform = `rotate(${tiltLR}deg) rotate3d(1,0,0, ${tiltFB*-1}deg)`
     document.getElementById('box').style.boxShadow = `${tiltLR/4}px ${tiltFB/4}px`;
+
+    document.getElementById('inner').style.top = `calc(50% - 25px + ${tiltLR})`;
+    document.getElementById('inner').style.left = `calc(50% - 25px + ${tiltFB})`;
  });
 
 window.addEventListener('devicemotion', e => {
