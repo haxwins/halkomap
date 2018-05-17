@@ -8,16 +8,13 @@ window.onload = () =>{
      } else {
         document.getElementById('text3').innerHTML = 'cant';
      }
-     
-    
-     
-    
 }
+
 window.addEventListener('deviceorientation', function(event) {
     document.getElementById('text1').innerHTML = "we in";
     
  });
 
- window.addEventListener('devicemotion', function(event) {
+window.addEventListener('devicemotion', function(event) {
     document.getElementById('text2').innerHTML = "we in2";
  });
