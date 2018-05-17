@@ -3,10 +3,10 @@ window.onload = () =>{
     let element = document.getElementById('logo')
     element.style.width = "200px";
     if (window.DeviceOrientationEvent) {
-        document.getElementById('text3').innerHTML = 'can124124';
+        document.getElementById('text3').innerHTML = '';
         
      } else {
-        document.getElementById('text3').innerHTML = 'cant214124';
+        document.getElementById('text3').innerHTML = '';
      }
      let box = document.getElementById('box');
     box.style.border = `1px solid black`;
