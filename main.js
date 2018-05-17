@@ -11,10 +11,10 @@ window.onload = () =>{
 }
 
 window.addEventListener('deviceorientation', function(event) {
-    document.getElementById('text1').innerHTML = "we in";
+    document.getElementById('text1').innerHTML = "asd";
     
  });
 
 window.addEventListener('devicemotion', function(event) {
-    document.getElementById('text2').innerHTML = "we in2";
+    document.getElementById('text2').innerHTML = "asd2";
  });
